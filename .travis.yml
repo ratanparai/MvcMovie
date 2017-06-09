@@ -2,8 +2,4 @@ language: csharp
 mono: none
 dotnet: 1.0.4
 dist: trusty
-install:
-    - dotnet restore MvcMovie\MvcMovie.csproj
-    - dotnet restore MvcMovie.Test\MvcMovie.Test.csproj
-script:
-    - dotnet test MvcMovie.Test\MvcMovie.Test.csproj
+script: build.sh
